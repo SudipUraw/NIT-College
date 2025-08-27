@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Programs - Nepal Institute of Technology</title>
+    <meta name="description"
+        content="Explore NIT's cutting-edge academic programs including MBA and B.Sc (Hons) IT designed for the future of technology and business.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">NIT</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="index.html" class="active">Programs</a></li>
+                <li><a href="../fields/index.html">Academic Fields</a></li>
+                <li><a href="../admissions.html">Admissions</a></li>
+                <li><a href="../campus.html">Campus Life</a></li>
+                <li><a href="../faculty.html">Faculty</a></li>
+                <li><a href="../events.html">Events</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li class="current">Academic Programs</li>
+            </ul>
+        </div>
+        <!-- Hero Section -->
+        <section class="hero" style="height: 60vh;">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            <div class="hero-content">
+                <h1>Academic Programs</h1>
+                <p>Cutting-Edge Education for Tomorrow's Leaders</p>
+            </div>
+        </section>
+
+        <!-- Programs Overview -->
+        <section class="section">
+            <h2 class="section-title">Choose Your Path to Success</h2>
+            <p class="section-subtitle">Our programs are designed to equip you with the skills, knowledge, and
+                experience needed to excel in the rapidly evolving technology landscape.</p>
+
+            <!-- Program Categories Tabs -->
+            <div class="tabs">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="all-programs">All Programs</button>
+                    <button class="tab-button" data-tab="undergraduate">Undergraduate</button>
+                    <button class="tab-button" data-tab="postgraduate">Postgraduate</button>
+                </div>
+
+                <!-- All Programs Tab -->
+                <div id="all-programs" class="tab-content active">
+                    <div class="grid grid-2">
+                        <!-- MBA Program Card -->
+                        <div class="card" data-animate="slideInLeft">
+                            <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                                <div style="font-size: 3rem; margin-right: 1rem;">🎓</div>
+                                <div>
+                                    <h3>Master of Business Administration (MBA)</h3>
+                                    <span style="color: var(--neon-green); font-weight: 600;">Postgraduate
+                                        Program</span>
+                                </div>
+                            </div>
+
+                            <p>Transform into a strategic leader with our comprehensive MBA program focusing on digital
+                                transformation, innovation management, and entrepreneurial thinking.</p>
+
+                            <div style="margin: 2rem 0;">
+                                <h4 style="color: var(--primary-cyan); margin-bottom: 1rem;">Program Highlights:</h4>
+                                <ul class="feature-list">
+                                    <li>Strategic Digital Management</li>
+                                    <li>Innovation & Entrepreneurship</li>
+                                    <li>Data-Driven Decision Making</li>
+                                    <li>Global Business Leadership</li>
+                                    <li>Technology Integration</li>
+                                    <li>Sustainability & Ethics</li>
+                                </ul>
+                            </div>
+
+                            <div
+                                style="background: rgba(0,255,255,0.1); padding: 1rem; border-radius: 10px; margin: 1rem 0;">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                    <span><strong>Duration:</strong> 2 Years</span>
+                                    <span><strong>Credits:</strong> 60</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between;">
+                                    <span><strong>Mode:</strong> Full-time/Part-time</span>
+                                    <span><strong>Intake:</strong> Spring & Fall</span>
+                                </div>
+                            </div>
+
+                            <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                                <a href="mba.html" class="btn btn-primary">Detailed Info</a>
+                                <button class="btn btn-secondary" data-modal="mba-apply">Apply Now</button>
+                            </div>
+                        </div>
+
+                        <!-- B.Sc IT Program Card -->
+                        <div class="card" data-animate="slideInRight">
+                            <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                                <div style="font-size: 3rem; margin-right: 1rem;">💻</div>
+                                <div>
+                                    <h3>B.Sc (Hons) Information Technology</h3>
+                                    <span style="color: var(--neon-pink); font-weight: 600;">Undergraduate
+                                        Program</span>
+                                </div>
+                            </div>
+
+                            <p>Dive deep into the world of technology with our comprehensive IT program covering AI,
+                                cybersecurity, software development, and emerging technologies.</p>
+
+                            <div style="margin: 2rem 0;">
+                                <h4 style="color: var(--primary-cyan); margin-bottom: 1rem;">Program Highlights:</h4>
+                                <ul class="feature-list">
+                                    <li>Artificial Intelligence & Machine Learning</li>
+                                    <li>Cybersecurity & Ethical Hacking</li>
+                                    <li>Full-Stack Software Development</li>
+                                    <li>Data Science & Analytics</li>
+                                    <li>Cloud Computing & DevOps</li>
+                                    <li>Mobile & Web Technologies</li>
+                                </ul>
+                            </div>
+
+                            <div
+                                style="background: rgba(255,20,147,0.1); padding: 1rem; border-radius: 10px; margin: 1rem 0;">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                    <span><strong>Duration:</strong> 4 Years</span>
+                                    <span><strong>Credits:</strong> 120</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between;">
+                                    <span><strong>Mode:</strong> Full-time</span>
+                                    <span><strong>Intake:</strong> Spring & Fall</span>
+                                </div>
+                            </div>
+
+                            <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                                <a href="bsc-it.html" class="btn btn-primary">Detailed Info</a>
+                                <button class="btn btn-secondary" data-modal="bsc-apply">Apply Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Undergraduate Tab -->
+                <div id="undergraduate" class="tab-content">
+                    <div class="grid grid-1" style="max-width: 800px; margin: 0 auto;">
+                        <div class="card">
+                            <div style="text-align: center; margin-bottom: 2rem;">
+                                <div style="font-size: 4rem; margin-bottom: 1rem;">💻</div>
+                                <h3>B.Sc (Hons) Information Technology</h3>
+                                <p style="color: var(--neon-pink); font-weight: 600;">4-Year Undergraduate Program</p>
+                            </div>
+
+                            <div style="margin: 2rem 0;">
+                                <h4 style="color: var(--primary-cyan);">Why Choose Our B.Sc IT Program?</h4>
+                                <p>Our undergraduate program is designed to provide a strong foundation in computer
+                                    science principles while focusing on practical, industry-relevant skills. Students
+                                    gain hands-on experience with the latest technologies and tools used in the
+                                    industry.</p>
+                            </div>
+
+                            <div class="grid grid-2" style="margin: 2rem 0;">
+                                <div>
+                                    <h4 style="color: var(--primary-cyan);">Core Specializations:</h4>
+                                    <ul class="feature-list">
+                                        <li>Software Engineering</li>
+                                        <li>Data Science & Analytics</li>
+                                        <li>Cybersecurity</li>
+                                        <li>AI & Machine Learning</li>
+                                        <li>Web & Mobile Development</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h4 style="color: var(--primary-cyan);">Career Opportunities:</h4>
+                                    <ul class="feature-list">
+                                        <li>Software Developer</li>
+                                        <li>Data Scientist</li>
+                                        <li>Cybersecurity Analyst</li>
+                                        <li>AI/ML Engineer</li>
+                                        <li>System Administrator</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <a href="bsc-it.html" class="btn btn-primary">Complete Program Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Postgraduate Tab -->
+                <div id="postgraduate" class="tab-content">
+                    <div class="grid grid-1" style="max-width: 800px; margin: 0 auto;">
+                        <div class="card">
+                            <div style="text-align: center; margin-bottom: 2rem;">
+                                <div style="font-size: 4rem; margin-bottom: 1rem;">🎓</div>
+                                <h3>Master of Business Administration (MBA)</h3>
+                                <p style="color: var(--neon-green); font-weight: 600;">2-Year Postgraduate Program</p>
+                            </div>
+
+                            <div style="margin: 2rem 0;">
+                                <h4 style="color: var(--primary-cyan);">Why Choose Our MBA Program?</h4>
+                                <p>Our MBA program uniquely combines traditional business management principles with
+                                    cutting-edge technology insights. We prepare leaders who can navigate the digital
+                                    transformation of businesses across all industries.</p>
+                            </div>
+
+                            <div class="grid grid-2" style="margin: 2rem 0;">
+                                <div>
+                                    <h4 style="color: var(--primary-cyan);">Specializations:</h4>
+                                    <ul class="feature-list">
+                                        <li>Digital Marketing & E-commerce</li>
+                                        <li>Technology Management</li>
+                                        <li>Entrepreneurship & Innovation</li>
+                                        <li>Financial Technology (FinTech)</li>
+                                        <li>Operations & Supply Chain</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h4 style="color: var(--primary-cyan);">Career Paths:</h4>
+                                    <ul class="feature-list">
+                                        <li>Business Development Manager</li>
+                                        <li>Technology Consultant</li>
+                                        <li>Product Manager</li>
+                                        <li>Startup Founder</li>
+                                        <li>Digital Transformation Leader</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <a href="mba.html" class="btn btn-primary">Complete Program Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Features -->
+        <section class="section">
+            <h2 class="section-title">What Makes Our Programs Special?</h2>
+            <div class="grid grid-4">
+                <div class="card" data-animate="fadeInUp">
+                    <h3>🏭 Industry Integration</h3>
+                    <p>Real-world projects, internships, and collaborations with leading companies ensure practical
+                        learning experience.</p>
+                </div>
+
+                <div class="card" data-animate="fadeInUp">
+                    <h3>👨‍🏫 Expert Faculty</h3>
+                    <p>Learn from industry veterans and academic experts with extensive experience in their respective
+                        fields.</p>
+                </div>
+
+                <div class="card" data-animate="fadeInUp">
+                    <h3>🔬 Research Opportunities</h3>
+                    <p>Engage in cutting-edge research projects and contribute to publications in top-tier conferences
+                        and journals.</p>
+                </div>
+
+                <div class="card" data-animate="fadeInUp">
+                    <h3>🌐 Global Perspective</h3>
+                    <p>International exchange programs, global case studies, and multicultural learning environment.</p>
+                </div>
+
+                <div class="card" data-animate="fadeInUp">
+                    <h3>💼 Career Support</h3>
+                    <p>Dedicated career services, job placement assistance, and alumni networking opportunities.</p>
+                </div>
+
+                <div class="card" data-animate="fadeInUp">
+                    <h3>🏆 Certification Programs</h3>
+                    <p>Additional industry certifications from Microsoft, Google, AWS, and other leading technology
+                        providers.</p>
+                </div>
+
+                <div class="card" data-animate="fadeInUp">
+                    <h3>🚀 Innovation Labs</h3>
+                    <p>Access to state-of-the-art labs, maker spaces, and technology incubators for hands-on learning.
+                    </p>
+                </div>
+
+                <div class="card" data-animate="fadeInUp">
+                    <h3>📊 Data-Driven Learning</h3>
+                    <p>Personalized learning paths, progress tracking, and competency-based assessment methods.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admission Requirements -->
+        <section class="section" style="background: rgba(20, 20, 40, 0.3); backdrop-filter: blur(20px);">
+            <h2 class="section-title">Admission Requirements</h2>
+            <div class="grid grid-2">
+                <div class="card">
+                    <h3>🎓 MBA Program Requirements</h3>
+                    <ul class="feature-list">
+                        <li>Bachelor's degree from recognized university</li>
+                        <li>Minimum 2.5 CGPA or 60% aggregate</li>
+                        <li>2+ years work experience (preferred)</li>
+                        <li>GMAT/CAT/MAT score (or NIT entrance test)</li>
+                        <li>English proficiency (TOEFL/IELTS for international students)</li>
+                        <li>Statement of Purpose</li>
+                        <li>2 Letters of Recommendation</li>
+                        <li>Interview (shortlisted candidates)</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>💻 B.Sc IT Program Requirements</h3>
+                    <ul class="feature-list">
+                        <li>+2 or equivalent with Science/Mathematics</li>
+                        <li>Minimum 60% in +2 level</li>
+                        <li>Mathematics as compulsory subject</li>
+                        <li>NIT Entrance Examination</li>
+                        <li>English proficiency</li>
+                        <li>Basic computer knowledge (preferred)</li>
+                        <li>Age: 17-25 years</li>
+                        <li>Medical fitness certificate</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center mt-3">
+                <a href="../admissions.html" class="btn btn-primary">Complete Admission Process</a>
+                <a href="../contact.html" class="btn btn-secondary">Contact Admissions</a>
+            </div>
+        </section>
+
+        <!-- Program Stats -->
+        <section class="stats">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="95">0</h3>
+                    <p>Graduate Employment Rate</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="1200">0</h3>
+                    <p>Program Alumni</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="75">0</h3>
+                    <p>Average Salary Increase (%)</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="25">0</h3>
+                    <p>Industry Partnerships</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Application Modals -->
+    <div id="mba-apply" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 style="color: var(--primary-cyan);">Quick MBA Application</h2>
+            <p>Start your MBA application process. Our admissions team will contact you within 24 hours.</p>
+            <form>
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Email *</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone *</label>
+                    <input type="tel" required>
+                </div>
+                <div class="form-group">
+                    <label>Work Experience (Years)</label>
+                    <select>
+                        <option>0-1 years</option>
+                        <option>2-5 years</option>
+                        <option>5+ years</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="bsc-apply" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 style="color: var(--primary-cyan);">Quick B.Sc IT Application</h2>
+            <p>Begin your journey in Information Technology. Get started with your application today.</p>
+            <form>
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Email *</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone *</label>
+                    <input type="tel" required>
+                </div>
+                <div class="form-group">
+                    <label>+2 Stream</label>
+                    <select>
+                        <option>Science</option>
+                        <option>Management</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>+2 Percentage/Grade</label>
+                    <input type="text" placeholder="e.g., 85% or 3.8 GPA">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="../about.html">About Us</a>
+                <a href="index.html">Programs</a>
+                <a href="../admissions.html">Admissions</a>
+                <a href="../faculty.html">Faculty</a>
+                <a href="../campus.html">Campus Life</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Academic Fields</h3>
+                <a href="../fields/programming.html">Programming</a>
+                <a href="../fields/accounting.html">Accounting</a>
+                <a href="../fields/mathematics.html">Mathematics</a>
+                <a href="../fields/linguistics.html">Linguistics</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Student Life</h3>
+                <a href="../events.html">Events</a>
+                <a href="../forums.html">Forums</a>
+                <a href="../resources.html">Resources</a>
+                <a href="../testimonials.html">Testimonials</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact & Connect</h3>
+                <a href="../contact.html">Contact Us</a>
+                <a href="tel:+977-1-4567890">📞 +977-1-4567890</a>
+                <a href="mailto:info@nit.edu.np">✉️ info@nit.edu.np</a>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="LinkedIn">💼</a>
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="YouTube">📺</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Nepal Institute of Technology. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

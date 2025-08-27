@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Life - Nepal Institute of Technology</title>
+    <meta name="description"
+        content="Explore the vibrant campus life at NIT, featuring student clubs, modern facilities, and a thriving community.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">NIT</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programs/index.html">Programs</a></li>
+                <li><a href="fields/index.html">Academic Fields</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="campus.html" class="active">Campus Life</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><span class="current">Campus Life</span></li>
+            </ul>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="hero" style="height: 60vh;">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            <div class="hero-content">
+                <h1>Life at NIT</h1>
+                <p>Experience a dynamic and innovative campus environment designed to inspire creativity and collaboration.</p>
+            </div>
+        </section>
+
+        <!-- Student Clubs & Organizations Section -->
+        <section class="section" id="clubs">
+            <h2 class="section-title">Clubs & Organizations</h2>
+            <p class="section-subtitle">Join a diverse range of student-led clubs to explore your passions, develop new
+                skills, and connect with peers.</p>
+
+            <div class="grid grid-3">
+                <div class="card">
+                    <h3>🤖 Robotics & AI Club</h3>
+                    <p>Dive into the world of automation and artificial intelligence. Participate in national
+                        competitions, build innovative projects, and attend workshops led by industry experts.</p>
+                    <a href="#" class="btn btn-secondary">Join Club</a>
+                </div>
+                <div class="card">
+                    <h3>💡 Entrepreneurship Cell</h3>
+                    <p>Nurture your business ideas from conception to launch. The E-Cell provides mentorship, funding
+                        opportunities, and networking events for aspiring entrepreneurs.</p>
+                    <a href="#" class="btn btn-secondary">Get Involved</a>
+                </div>
+                <div class="card">
+                    <h3>🛡️ Cybersecurity Chapter</h3>
+                    <p>Explore the realms of ethical hacking, digital forensics, and network security. Engage in
+                        capture-the-flag events and real-world security challenges.</p>
+                    <a href="#" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="card">
+                    <h3>💻 Coding Community</h3>
+                    <p>Collaborate on open-source projects, participate in hackathons, and sharpen your programming
+                        skills with fellow coders and competitive programmers.</p>
+                    <a href="#" class="btn btn-secondary">Join Community</a>
+                </div>
+                <div class="card">
+                    <h3>🌐 Debating & MUN Society</h3>
+                    <p>Enhance your public speaking and critical thinking skills. Participate in Model United Nations
+                        conferences and debates on global and technological issues.</p>
+                    <a href="#" class="btn btn-secondary">Participate</a>
+                </div>
+                <div class="card">
+                    <h3>🎮 E-Sports Federation</h3>
+                    <p>Compete in inter-college gaming tournaments. Our E-Sports Federation supports various competitive
+                        titles and promotes a healthy gaming culture.</p>
+                    <a href="#" class="btn btn-secondary">Join a Team</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facilities Section with Tabs -->
+        <section class="section" id="facilities">
+            <h2 class="section-title">State-of-the-Art Facilities</h2>
+            <p class="section-subtitle">Our campus is equipped with modern facilities to support your academic and
+                personal growth.</p>
+
+            <div class="tabs">
+                <div class="tab-buttons">
+                    <button class="tab-button" data-tab="tab-library">Digital Library</button>
+                    <button class="tab-button" data-tab="tab-labs">Advanced Labs</button>
+                    <button class="tab-button" data-tab="tab-sports">Sports Complex</button>
+                    <button class="tab-button" data-tab="tab-cafe">Cafeteria</button>
+                </div>
+
+                <div id="tab-library" class="tab-content card">
+                    <h3>📚 The Nexus - Digital Library</h3>
+                    <p>Access a vast collection of digital resources, e-books, research papers, and international
+                        journals. Our library provides quiet study zones, collaborative spaces, and high-speed internet
+                        access.</p>
+                    <div class="gallery-item mt-2"><img
+                            src="./images/Digital Library.jpg"
+                            alt="Digital Library"></div>
+                </div>
+
+                <div id="tab-labs" class="tab-content card">
+                    <h3>🔬 Advanced Technology Labs</h3>
+                    <p>Our specialized labs include an AI & Machine Learning Lab, a Cybersecurity & Forensics Lab, and a
+                        Robotics Lab, all equipped with the latest hardware and software to facilitate hands-on learning
+                        and research.</p>
+                    <div class="gallery-item mt-2"><img
+                            src="./images/Advanced Technology Labs.jpg"
+                            alt="Advanced Labs"></div>
+                </div>
+
+                <div id="tab-sports" class="tab-content card">
+                    <h3>🏀 Velocity - Sports Complex</h3>
+                    <p>Stay active and healthy at our comprehensive sports complex, featuring a basketball court, indoor
+                        badminton, a fully-equipped gym, and spaces for yoga and meditation.</p>
+                    <div class="gallery-item mt-2"><img
+                            src="./images/Sports Complex.jpg"
+                            alt="Sports Complex"></div>
+                </div>
+
+                <div id="tab-cafe" class="tab-content card">
+                    <h3>☕ The Byte Cafe</h3>
+                    <p>Relax and recharge at our modern cafeteria. It offers a variety of healthy and delicious food
+                        options, serving as a popular hub for students to socialize and collaborate.</p>
+                    <div class="gallery-item mt-2"><img
+                            src="./images/Cafe.jpg" alt="Cafeteria">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Campus Gallery Section -->
+        <section class="section" id="gallery">
+            <h2 class="section-title">Campus Gallery</h2>
+            <p class="section-subtitle">A glimpse into the moments that define the NIT experience.</p>
+
+            <div class="gallery grid-4">
+                <div class="gallery-item"><img src="./images/Campus Events.jpg"
+                        alt="Campus Event"></div>
+                <div class="gallery-item"><img src="./images/Lab Session.jpg"
+                        alt="Lab Session"></div>
+                <div class="gallery-item"><img
+                        src="./images/Graduation Day.webp"
+                        alt="Graduation Day"></div>
+                <div class="gallery-item"><img
+                        src="./images/Student Collaboration.jpg"
+                        alt="Student Collaboration"></div>
+                <div class="gallery-item"><img src="./images/Sports Meet.jpg"
+                        alt="Sports Meet"></div>
+                <div class="gallery-item"><img
+                        src="./images/Library Study.jpg" alt="Library Study">
+                </div>
+                <div class="gallery-item"><img src="./images/Tech Fest.jpg"
+                        alt="Tech Fest"></div>
+                <div class="gallery-item"><img src="./images/Campus View.jpg"
+                        alt="Campus View"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="../about.html">About Us</a>
+                <a href="../programs/index.html">Programs</a>
+                <a href="../admissions.html">Admissions</a>
+                <a href="../faculty.html">Faculty</a>
+                <a href="../campus.html">Campus Life</a>
+            </div>
+            <div class="footer-section">
+                <h3>Academic Fields</h3>
+                <a href="../fields/programming.html">Programming</a>
+                <a href="../fields/accounting.html">Accounting</a>
+                <a href="../fields/mathematics.html">Mathematics</a>
+                <a href="../fields/linguistics.html">Linguistics</a>
+            </div>
+            <div class="footer-section">
+                <h3>Student Life</h3>
+                <a href="../events.html">Events</a>
+                <a href="../forums.html">Forums</a>
+                <a href="../resources.html">Resources</a>
+                <a href="../testimonials.html">Testimonials</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact & Connect</h3>
+                <a href="../contact.html">Contact Us</a>
+                <a href="tel:+977-1-4567890">📞 +977-1-4567890</a>
+                <a href="mailto:info@nit.edu.np">✉️ info@nit.edu.np</a>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="LinkedIn">💼</a>
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="YouTube">📺</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Nepal Institute of Technology. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

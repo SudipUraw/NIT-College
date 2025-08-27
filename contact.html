@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Nepal Institute of Technology</title>
+    <meta name="description"
+        content="Get in touch with NIT. Visit us, call us, or send us a message. We're here to help with admissions, programs, and any questions about our institute.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">NIT</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programs/index.html">Programs</a></li>
+                <li><a href="fields/index.html">Academic Fields</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="campus.html">Campus Life</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Contact Us</li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" style="height: 60vh;">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            <div class="hero-content">
+                <h1>Get In Touch</h1>
+                <p>We're Here to Help You Start Your Journey</p>
+            </div>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="section">
+            <h2 class="section-title">Contact Information</h2>
+            <p class="section-subtitle">Multiple ways to reach us for any inquiries or assistance</p>
+
+            <div class="grid grid-3">
+                <div class="card" data-animate="fadeInUp">
+                    <h3>Main Campus</h3>
+                    <div style="margin: 2rem 0; text-align: center;">
+                        <div
+                            style="width: 80px; height: 80px; background: var(--gradient-1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; font-size: 2rem;">
+                            🏫</div>
+                    </div>
+                    <p><strong>Address:</strong><br>
+                        Dhulikhel, Kavre<br>
+                        Nepal - 45200</p>
+
+                    <p><strong>Campus Hours:</strong><br>
+                        Sunday - Friday: 6:00 AM - 8:00 PM<br>
+                        Saturday: 9:00 AM - 5:00 PM</p>
+
+                    <a href="#map" class="btn btn-secondary">View on Map</a>
+                </div>
+
+                <div class="card" data-animate="fadeInUp">
+                    <h3>Phone & Email</h3>
+                    <div style="margin: 2rem 0; text-align: center;">
+                        <div
+                            style="width: 80px; height: 80px; background: var(--gradient-2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; font-size: 2rem;">
+                            📞</div>
+                    </div>
+                    <p><strong>Main Line:</strong><br>
+                        <a href="tel:+977-11-490300">+977-11-490300</a>
+                    </p>
+
+                    <p><strong>Admissions:</strong><br>
+                        <a href="tel:+977-11-490301">+977-11-490301</a>
+                    </p>
+
+                    <p><strong>Email:</strong><br>
+                        <a href="mailto:info@nit.edu.np">info@nit.edu.np</a>
+                    </p>
+
+                    <p><strong>Emergency:</strong><br>
+                        <a href="tel:+977-11-490399">+977-11-490399</a>
+                    </p>
+                </div>
+
+                <div class="card" data-animate="fadeInUp">
+                    <h3>Office Hours</h3>
+                    <div style="margin: 2rem 0; text-align: center;">
+                        <div
+                            style="width: 80px; height: 80px; background: var(--gradient-3); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; font-size: 2rem;">
+                            ⏰</div>
+                    </div>
+                    <p><strong>Administration:</strong><br>
+                        9:00 AM - 5:00 PM</p>
+
+                    <p><strong>Admissions Office:</strong><br>
+                        8:00 AM - 6:00 PM</p>
+
+                    <p><strong>Student Services:</strong><br>
+                        7:00 AM - 7:00 PM</p>
+
+                    <p><strong>Library:</strong><br>
+                        24/7 (for enrolled students)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Contact Form -->
+        <section class="section">
+            <div class="grid grid-2">
+                <div class="card" data-animate="slideInLeft">
+                    <h3>Send Us a Message</h3>
+                    <p>Have questions? We'd love to hear from you. Fill out the form and we'll get back to you within 24
+                        hours.</p>
+
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Full Name *</label>
+                            <input type="text" id="contact-name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-email">Email Address *</label>
+                            <input type="email" id="contact-email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-phone">Phone Number</label>
+                            <input type="tel" id="contact-phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-subject">Subject *</label>
+                            <select id="contact-subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="admissions">Admissions Inquiry</option>
+                                <option value="programs">Program Information</option>
+                                <option value="scholarships">Scholarships & Financial Aid</option>
+                                <option value="campus-tour">Campus Visit/Tour</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="feedback">Feedback/Suggestions</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message">Message *</label>
+                            <textarea id="contact-message" name="message" rows="5" required
+                                placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" required style="width: auto; margin-right: 10px;">
+                                I agree to receive communications from NIT regarding my inquiry
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="card" data-animate="slideInRight">
+                    <h3>Why Choose NIT?</h3>
+                    <ul class="feature-list">
+                        <li><strong>Expert Faculty:</strong> Learn from industry professionals with real-world
+                            experience</li>
+                        <li><strong>Modern Facilities:</strong> State-of-the-art labs, library, and technology
+                            infrastructure</li>
+                        <li><strong>Industry Connections:</strong> Strong partnerships with leading tech companies</li>
+                        <li><strong>Career Support:</strong> Dedicated placement cell with 95% placement rate</li>
+                        <li><strong>Research Opportunities:</strong> Engage in cutting-edge research projects</li>
+                        <li><strong>Global Exposure:</strong> International exchange programs and collaborations</li>
+                    </ul>
+
+                    <div
+                        style="background: rgba(0,255,255,0.1); padding: 2rem; border-radius: 15px; margin-top: 2rem; text-align: center;">
+                        <h4 style="color: var(--primary-cyan); margin-bottom: 1rem;">Quick Response Guarantee</h4>
+                        <p>We respond to all inquiries within 24 hours during business days. For urgent matters, call us
+                            directly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Department Contacts -->
+        <section class="section">
+            <h2 class="section-title">Department Contacts</h2>
+            <p class="section-subtitle">Connect directly with specific departments for specialized assistance</p>
+
+            <div class="grid grid-2">
+                <div class="card" data-animate="fadeInUp">
+                    <h3>Academic Departments</h3>
+                    <div class="table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Department</th>
+                                    <th>Contact</th>
+                                    <th>Email</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>MBA Program</td>
+                                    <td>+977-11-490302</td>
+                                    <td>mba@nit.edu.np</td>
+                                </tr>
+                                <tr>
+                                    <td>B.Sc IT Program</td>
+                                    <td>+977-11-490303</td>
+                                    <td>bscit@nit.edu.np</td>
+                                </tr>
+                                <tr>
+                                    <td>Research & Development</td>
+                                    <td>+977-11-490304</td>
+                                    <td>research@nit.edu.np</td>
+                                </tr>
+                                <tr>
+                                    <td>International Relations</td>
+                                    <td>+977-11-490305</td>
+                                    <td>international@nit.edu.np</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card" data-animate="fadeInUp">
+                    <h3>Student Services</h3>
+                    <div class="table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Service</th>
+                                    <th>Contact</th>
+                                    <th>Email</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Admissions Office</td>
+                                    <td>+977-11-490306</td>
+                                    <td>admissions@nit.edu.np</td>
+                                </tr>
+                                <tr>
+                                    <td>Student Counseling</td>
+                                    <td>+977-11-490307</td>
+                                    <td>counseling@nit.edu.np</td>
+                                </tr>
+                                <tr>
+                                    <td>Career Services</td>
+                                    <td>+977-11-490308</td>
+                                    <td>careers@nit.edu.np</td>
+                                </tr>
+                                <tr>
+                                    <td>Financial Aid</td>
+                                    <td>+977-11-490309</td>
+                                    <td>scholarships@nit.edu.np</td>
+                                </tr>
+                                <tr>
+                                    <td>Campus Life</td>
+                                    <td>+977-11-490310</td>
+                                    <td>campuslife@nit.edu.np</td>
+                                </tr>
+                                <tr>
+                                    <td>IT Support</td>
+                                    <td>+977-11-490311</td>
+                                    <td>itsupport@nit.edu.np</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Campus Location & Map -->
+        <section class="section" id="map">
+            <h2 class="section-title">Find Us</h2>
+            <p class="section-subtitle">Located in the beautiful hills of Dhulikhel with easy access from Kathmandu</p>
+
+            <div class="grid grid-2">
+                <div class="card" data-animate="slideInLeft">
+                    <h3>Campus Location</h3>
+                    <p><strong>Full Address:</strong><br>
+                        Nepal Institute of Technology<br>
+                        Dhulikhel Municipality<br>
+                        Kavre District, Bagmati Province<br>
+                        Nepal - 45200</p>
+
+                    <h4 style="color: var(--primary-cyan); margin-top: 2rem;">Transportation</h4>
+                    <ul class="feature-list">
+                        <li><strong>From Kathmandu:</strong> 32 km (45 minutes drive)</li>
+                        <li><strong>From Bhaktapur:</strong> 20 km (30 minutes drive)</li>
+                        <li><strong>Public Transport:</strong> Regular buses from Ratna Park</li>
+                        <li><strong>Private Vehicle:</strong> Parking available on campus</li>
+                    </ul>
+
+                    <h4 style="color: var(--primary-cyan); margin-top: 2rem;">Landmarks</h4>
+                    <ul class="feature-list">
+                        <li>Near Dhulikhel Hospital</li>
+                        <li>5 minutes from Dhulikhel Bus Park</li>
+                        <li>Opposite Himalayan Range View Point</li>
+                        <li>Adjacent to Dhulikhel Lodge Resort</li>
+                    </ul>
+                </div>
+
+                <div class="card" data-animate="slideInRight">
+                    <h3>Campus Map</h3>
+                    <div id="map-placeholder">
+                        <div
+                            style="width: 100%; height: 300px; background: var(--card-bg); border-radius: 15px; display: flex; align-items: center; justify-content: center; color: var(--text-secondary); border: 2px dashed rgba(0,255,255,0.3);">
+                            <div style="text-align: center;">
+                                <div style="font-size: 3rem; margin-bottom: 1rem;">🗺️</div>
+                                <p>Interactive Google Maps would be integrated here</p>
+                                <p><small>Showing NIT campus location in Dhulikhel</small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <h4 style="color: var(--primary-cyan);">GPS Coordinates</h4>
+                        <p><strong>Latitude:</strong> 27.6198° N<br>
+                            <strong>Longitude:</strong> 85.5456° E
+                        </p>
+
+                        <div class="cta-buttons" style="margin-top: 1rem;">
+                            <a href="https://maps.google.com/?q=27.6198,85.5456" class="btn btn-secondary"
+                                target="_blank">Open in Google Maps</a>
+                            <a href="#" class="btn btn-primary" data-modal="campus-tour-modal">Schedule Campus Tour</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Media & Connect -->
+        <section class="section">
+            <h2 class="section-title">Connect With Us</h2>
+            <p class="section-subtitle">Follow us on social media for latest updates, events, and campus life</p>
+
+            <div class="grid grid-4">
+                <div class="card text-center" data-animate="fadeInUp">
+                    <div
+                        style="width: 80px; height: 80px; background: #1877f2; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 2rem; color: white;">
+                        F</div>
+                    <h3>Facebook</h3>
+                    <p>Daily updates, student achievements, campus events, and community discussions.</p>
+                    <a href="#" class="btn btn-secondary">Follow Us</a>
+                    <p style="color: var(--text-secondary); margin-top: 1rem;">15K+ Followers</p>
+                </div>
+
+                <div class="card text-center" data-animate="fadeInUp">
+                    <div
+                        style="width: 80px; height: 80px; background: #1da1f2; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 2rem; color: white;">
+                        T</div>
+                    <h3>Twitter</h3>
+                    <p>Quick updates, tech news, industry insights, and real-time campus notifications.</p>
+                    <a href="#" class="btn btn-secondary">Follow Us</a>
+                    <p style="color: var(--text-secondary); margin-top: 1rem;">8K+ Followers</p>
+                </div>
+
+                <div class="card text-center" data-animate="fadeInUp">
+                    <div
+                        style="width: 80px; height: 80px; background: #0e76a8; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 2rem; color: white;">
+                        L</div>
+                    <h3>LinkedIn</h3>
+                    <p>Professional networking, career opportunities, alumni success stories, and industry partnerships.
+                    </p>
+                    <a href="#" class="btn btn-secondary">Connect</a>
+                    <p style="color: var(--text-secondary); margin-top: 1rem;">12K+ Connections</p>
+                </div>
+
+                <div class="card text-center" data-animate="fadeInUp">
+                    <div
+                        style="width: 80px; height: 80px; background: #e4405f; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 2rem; color: white;">
+                        I</div>
+                    <h3>Instagram</h3>
+                    <p>Campus life photos, student activities, behind-the-scenes content, and visual stories.</p>
+                    <a href="#" class="btn btn-secondary">Follow Us</a>
+                    <p style="color: var(--text-secondary); margin-top: 1rem;">10K+ Followers</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Quick answers to common questions about contacting NIT</p>
+
+            <div class="accordion-group">
+                <div class="accordion">
+                    <button class="accordion-header">
+                        How quickly will I receive a response to my inquiry?
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We guarantee a response within 24 hours during business days (Sunday-Friday). For urgent
+                            matters, please call us directly. Weekend inquiries are typically responded to on Sunday
+                            morning.</p>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <button class="accordion-header">
+                        Can I schedule a campus visit?
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Yes! We offer guided campus tours Monday through Friday at 10 AM and 2 PM. Weekend tours are
+                            available by special appointment. Please contact our admissions office at least 2 days in
+                            advance to schedule your visit.</p>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <button class="accordion-header">
+                        Do you offer virtual consultations?
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Absolutely! We provide video consultations via Zoom, Google Meet, or Microsoft Teams. This is
+                            perfect for international students or those unable to visit in person. Schedule through our
+                            admissions office.</p>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <button class="accordion-header">
+                        What documents should I bring for an in-person visit?
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>For campus visits, bring your academic transcripts, identification, and any specific
+                            questions you have. If you're ready to apply, bring all required documents listed in our
+                            admissions section.</p>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <button class="accordion-header">
+                        Can parents accompany students during campus visits?
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Yes, parents and family members are welcome during campus tours. We encourage family
+                            involvement in the educational decision-making process and offer separate information
+                            sessions for parents.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Contacts -->
+        <section class="section" style="background: rgba(255, 69, 19, 0.1); backdrop-filter: blur(20px);">
+            <div class="text-center">
+                <h2 class="section-title">Emergency Information</h2>
+                <p class="section-subtitle">Important contacts for urgent situations</p>
+
+                <div class="grid grid-3">
+                    <div class="card">
+                        <h3 style="color: #ff4513;">Campus Security</h3>
+                        <p><strong>24/7 Emergency Line:</strong><br>
+                            <a href="tel:+977-11-490399">+977-11-490399</a>
+                        </p>
+                        <p>For any security concerns, accidents, or emergencies on campus</p>
+                    </div>
+
+                    <div class="card">
+                        <h3 style="color: #ff4513;">Medical Emergency</h3>
+                        <p><strong>Campus Health Center:</strong><br>
+                            <a href="tel:+977-11-490398">+977-11-490398</a>
+                        </p>
+                        <p>First aid, medical assistance, and emergency health services</p>
+                    </div>
+
+                    <div class="card">
+                        <h3 style="color: #ff4513;">Student Support</h3>
+                        <p><strong>Crisis Helpline:</strong><br>
+                            <a href="tel:+977-11-490397">+977-11-490397</a>
+                        </p>
+                        <p>Counseling support, mental health assistance, and student welfare</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Campus Tour Modal -->
+    <div id="campus-tour-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 style="color: var(--primary-cyan); margin-bottom: 2rem;">Schedule Campus Tour</h2>
+            <form id="campus-tour-form">
+                <div class="form-group">
+                    <label for="tour-name">Full Name *</label>
+                    <input type="text" id="tour-name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tour-email">Email Address *</label>
+                    <input type="email" id="tour-email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tour-phone">Phone Number *</label>
+                    <input type="tel" id="tour-phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tour-date">Preferred Date *</label>
+                    <input type="date" id="tour-date" name="date" required min="">
+                </div>
+
+                <div class="form-group">
+                    <label for="tour-time">Preferred Time *</label>
+                    <select id="tour-time" name="time" required>
+                        <option value="">Select time</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="flexible">Flexible</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tour-program">Interested Program</label>
+                    <select id="tour-program" name="program">
+                        <option value="">Select program</option>
+                        <option value="mba">MBA Program</option>
+                        <option value="bsc-it">B.Sc IT Program</option>
+                        <option value="both">Both Programs</option>
+                        <option value="general">General Tour</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tour-group">Group Size</label>
+                    <select id="tour-group" name="group">
+                        <option value="1">Just me</option>
+                        <option value="2">2 people</option>
+                        <option value="3-5">3-5 people</option>
+                        <option value="6+">6+ people (family/group)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tour-special">Special Requirements/Questions</label>
+                    <textarea id="tour-special" name="special" rows="3"
+                        placeholder="Any specific areas you'd like to see or questions you have..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Schedule Tour</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="about.html">About Us</a>
+                <a href="programs/index.html">Programs</a>
+                <a href="admissions.html">Admissions</a>
+                <a href="faculty.html">Faculty</a>
+                <a href="campus.html">Campus Life</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Academic Fields</h3>
+                <a href="fields/programming.html">Programming</a>
+                <a href="fields/accounting.html">Accounting</a>
+                <a href="fields/mathematics.html">Mathematics</a>
+                <a href="fields/linguistics.html">Linguistics</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Student Life</h3>
+                <a href="events.html">Events</a>
+                <a href="forums.html">Forums</a>
+                <a href="resources.html">Resources</a>
+                <a href="testimonials.html">Testimonials</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact & Connect</h3>
+                <a href="contact.html">Contact Us</a>
+                <a href="tel:+977-1-4567890">📞 +977-1-4567890</a>
+                <a href="mailto:info@nit.edu.np">✉️ info@nit.edu.np</a>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="LinkedIn">💼</a>
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="YouTube">📺</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Nepal Institute of Technology. All rights reserved. |
+                <a href="#" style="color: var(--text-secondary);">Privacy Policy</a> |
+                <a href="#" style="color: var(--text-secondary);">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="js/script.js"></script>
+
+    <!-- Additional JavaScript for Contact Page -->
+    <script>
+        // Set minimum date for tour booking (today)
+        document.addEventListener('DOMContentLoaded', function () {
+            const dateInput = document.getElementById('tour-date');
+            if (dateInput) {
+                const today = new Date().toISOString().split('T')[0];
+                dateInput.setAttribute('min', today);
+            }
+        });
+    </script>
+</body>
+
+</html>

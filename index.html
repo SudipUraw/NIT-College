@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepal Institute of Technology - Shape the Future</title>
+    <meta name="description" content="Premier technology education institute in Nepal offering MBA and B.Sc (Hons) IT programs. Shape your future with cutting-edge education.">
+    <meta name="keywords" content="Nepal, technology, education, MBA, IT, computer science, university, NIT">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">NIT</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programs/index.html">Programs</a></li>
+                <li><a href="fields/index.html">Academic Fields</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="campus.html">Campus Life</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            <div class="hero-content">
+                <h1>Shape the Future</h1>
+                <p>Where Innovation Meets Excellence in Technology Education</p>
+                <div class="cta-buttons">
+                    <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+                    <a href="programs/index.html" class="btn btn-secondary">Explore Programs</a>
+                    <a href="#programs-preview" class="btn btn-success">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Preview Section -->
+        <section class="section" id="programs-preview">
+            <h2 class="section-title">Featured Programs</h2>
+            <p class="section-subtitle">Discover our cutting-edge programs designed to prepare you for the technology-driven future.</p>
+            
+            <div class="grid grid-2">
+                <div class="card" data-animate="fadeInUp">
+                    <h3>MBA Program</h3>
+                    <p>Master of Business Administration designed for future leaders and entrepreneurs in the digital age.</p>
+                    <ul class="feature-list">
+                        <li>Strategic Digital Management</li>
+                        <li>Innovation & Entrepreneurship</li>
+                        <li>Data-Driven Decision Making</li>
+                        <li>Global Business Leadership</li>
+                        <li>Technology Integration</li>
+                    </ul>
+                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                        <a href="programs/mba.html" class="btn btn-primary">Learn More</a>
+                        <button class="btn btn-secondary" data-modal="mba-modal">Quick Apply</button>
+                    </div>
+                </div>
+                
+                <div class="card" data-animate="fadeInUp">
+                    <h3>B.Sc (Hons) IT</h3>
+                    <p>Bachelor of Science in Information Technology for the next generation of tech innovators.</p>
+                    <ul class="feature-list">
+                        <li>Artificial Intelligence & Machine Learning</li>
+                        <li>Cybersecurity & Ethical Hacking</li>
+                        <li>Full-Stack Software Development</li>
+                        <li>Data Science & Analytics</li>
+                        <li>Cloud Computing & DevOps</li>
+                    </ul>
+                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                        <a href="programs/bsc-it.html" class="btn btn-primary">Learn More</a>
+                        <button class="btn btn-secondary" data-modal="bsc-modal">Quick Apply</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Events Preview -->
+        <section class="section">
+            <h2 class="section-title">Upcoming Events</h2>
+            <p class="section-subtitle">Stay connected with our vibrant campus community through exciting events and opportunities.</p>
+            
+            <div class="grid grid-3">
+                <div class="card" data-animate="slideInLeft">
+                    <h3>🚀 AI & ML Summit 2025</h3>
+                    <p><strong>Date:</strong> March 15, 2025</p>
+                    <p>Join industry experts and students for an immersive day exploring the latest in artificial intelligence and machine learning technologies.</p>
+                    <a href="events.html" class="btn btn-primary">Register Now</a>
+                </div>
+                
+                <div class="card" data-animate="fadeInUp">
+                    <h3>💼 MBA Career Fair</h3>
+                    <p><strong>Date:</strong> March 22, 2025</p>
+                    <p>Connect with top employers and explore career opportunities in business, technology, and entrepreneurship.</p>
+                    <a href="events.html" class="btn btn-primary">Learn More</a>
+                </div>
+                
+                <div class="card" data-animate="slideInRight">
+                    <h3>🏆 Programming Contest</h3>
+                    <p><strong>Date:</strong> April 5, 2025</p>
+                    <p>Test your coding skills in our annual programming competition with exciting prizes and recognition.</p>
+                    <a href="events.html" class="btn btn-primary">Participate</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic Fields Spotlight -->
+        <section class="section">
+            <h2 class="section-title">Academic Excellence</h2>
+            <p class="section-subtitle">Explore our specialized academic fields with dedicated resources, events, and forums.</p>
+            
+            <div class="grid grid-4">
+                <a href="fields/programming.html" class="card" style="text-decoration: none;" data-animate="fadeInUp">
+                    <h3>💻 Programming</h3>
+                    <p>Coding labs, hackathons, and open-source projects to build your software development expertise.</p>
+                    <div style="color: var(--neon-green); margin-top: 1rem;">
+                        <small>→ Active Projects: 25+ | Members: 300+</small>
+                    </div>
+                </a>
+                
+                <a href="fields/accounting.html" class="card" style="text-decoration: none;" data-animate="fadeInUp">
+                    <h3>📊 Accounting</h3>
+                    <p>Financial case studies, accounting olympiads, and professional development workshops.</p>
+                    <div style="color: var(--neon-green); margin-top: 1rem;">
+                        <small>→ Workshops: 15+ | Certifications: 8+</small>
+                    </div>
+                </a>
+                
+                <a href="fields/mathematics.html" class="card" style="text-decoration: none;" data-animate="fadeInUp">
+                    <h3>🔢 Mathematics</h3>
+                    <p>Research activities, math competitions, and problem-solving circles for analytical minds.</p>
+                    <div style="color: var(--neon-green); margin-top: 1rem;">
+                        <small>→ Research Papers: 20+ | Competitions: 10+</small>
+                    </div>
+                </a>
+                
+                <a href="fields/linguistics.html" class="card" style="text-decoration: none;" data-animate="fadeInUp">
+                    <h3>🗣️ Linguistics</h3>
+                    <p>Language studies, debate competitions, and cultural exchange programs.</p>
+                    <div style="color: var(--neon-green); margin-top: 1rem;">
+                        <small>→ Languages: 12+ | Exchange Programs: 5+</small>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="text-center mt-3">
+                <a href="fields/index.html" class="btn btn-primary">Explore All Fields</a>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="stats-container">
+                <div class="stat-item" data-animate="fadeInUp">
+                    <h3 class="stat-number" data-target="2500">0</h3>
+                    <p>Active Students</p>
+                </div>
+                <div class="stat-item" data-animate="fadeInUp">
+                    <h3 class="stat-number" data-target="150">0</h3>
+                    <p>Expert Faculty</p>
+                </div>
+                <div class="stat-item" data-animate="fadeInUp">
+                    <h3 class="stat-number" data-target="50">0</h3>
+                    <p>Research Projects</p>
+                </div>
+                <div class="stat-item" data-animate="fadeInUp">
+                    <h3 class="stat-number" data-target="95">0</h3>
+                    <p>Placement Rate (%)</p>
+                </div>
+                <div class="stat-item" data-animate="fadeInUp">
+                    <h3 class="stat-number" data-target="25">0</h3>
+                    <p>Industry Partners</p>
+                </div>
+                <div class="stat-item" data-animate="fadeInUp">
+                    <h3 class="stat-number" data-target="12">0</h3>
+                    <p>Years Excellence</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Student Testimonials Preview -->
+        <section class="section">
+            <h2 class="section-title">Student Success Stories</h2>
+            <p class="section-subtitle">Hear from our graduates who are making their mark in the technology industry.</p>
+            
+            <div class="slider" data-autoplay="5000">
+                <div class="slide active">
+                    <div class="card">
+                        <p style="font-style: italic; font-size: 1.2rem; margin-bottom: 2rem;">"NIT's MBA program transformed my understanding of technology business. The faculty's industry experience and hands-on approach prepared me for real-world challenges."</p>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div class="profile-image" style="width: 60px; height: 60px; font-size: 1.5rem;">👨‍💼</div>
+                            <div>
+                                <h4 style="color: var(--primary-cyan);">Rajesh Sharma</h4>
+                                <p style="color: var(--text-secondary);">MBA Graduate 2023 | Tech Startup Founder</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide">
+                    <div class="card">
+                        <p style="font-style: italic; font-size: 1.2rem; margin-bottom: 2rem;">"The B.Sc IT program's focus on emerging technologies like AI and cybersecurity gave me a competitive edge. I landed my dream job at a multinational tech company."</p>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div class="profile-image" style="width: 60px; height: 60px; font-size: 1.5rem;">👩‍💻</div>
+                            <div>
+                                <h4 style="color: var(--primary-cyan);">Priya Gurung</h4>
+                                <p style="color: var(--text-secondary);">B.Sc IT Graduate 2024 | Software Engineer at Google</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide">
+                    <div class="card">
+                        <p style="font-style: italic; font-size: 1.2rem; margin-bottom: 2rem;">"The research opportunities and international collaborations at NIT opened doors I never imagined. Now I'm pursuing my PhD at MIT."</p>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div class="profile-image" style="width: 60px; height: 60px; font-size: 1.5rem;">👨‍🔬</div>
+                            <div>
+                                <h4 style="color: var(--primary-cyan);">Arjun Thapa</h4>
+                                <p style="color: var(--text-secondary);">Research Scholar | PhD Candidate at MIT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slider controls -->
+                <button class="prev" style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%); background: rgba(0,255,255,0.2); border: none; color: var(--primary-cyan); font-size: 2rem; cursor: pointer; border-radius: 50%; width: 50px; height: 50px;">‹</button>
+                <button class="next" style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); background: rgba(0,255,255,0.2); border: none; color: var(--primary-cyan); font-size: 2rem; cursor: pointer; border-radius: 50%; width: 50px; height: 50px;">›</button>
+                
+                <!-- Slider indicators -->
+                <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px;">
+                    <div class="indicator" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(0,255,255,0.3); cursor: pointer;"></div>
+                    <div class="indicator" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(0,255,255,0.3); cursor: pointer;"></div>
+                    <div class="indicator" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(0,255,255,0.3); cursor: pointer;"></div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-3">
+                <a href="testimonials.html" class="btn btn-secondary">Read More Stories</a>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="section" style="background: rgba(20, 20, 40, 0.3); backdrop-filter: blur(20px);">
+            <div class="text-center">
+                <h2 class="section-title">Ready to Shape Your Future?</h2>
+                <p class="section-subtitle">Join thousands of successful graduates who chose NIT for their technology education journey.</p>
+                <div class="cta-buttons">
+                    <a href="admissions.html" class="btn btn-primary">Start Application</a>
+                    <a href="campus.html" class="btn btn-secondary">Visit Campus</a>
+                    <a href="contact.html" class="btn btn-success">Get Information</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Application Modals -->
+    <div id="mba-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 style="color: var(--primary-cyan); margin-bottom: 2rem;">MBA Program Application</h2>
+            <form id="mba-form">
+                <div class="form-group">
+                    <label for="mba-name">Full Name *</label>
+                    <input type="text" id="mba-name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mba-email">Email Address *</label>
+                    <input type="email" id="mba-email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mba-phone">Phone Number *</label>
+                    <input type="tel" id="mba-phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mba-degree">Highest Degree *</label>
+                    <select id="mba-degree" name="degree" required>
+                        <option value="">Select your highest degree</option>
+                        <option value="bachelors">Bachelor's Degree</option>
+                        <option value="masters">Master's Degree</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mba-experience">Work Experience (Years)</label>
+                    <input type="number" id="mba-experience" name="experience" min="0">
+                </div>
+                
+                <div class="form-group">
+                    <label for="mba-interest">Why MBA at NIT?</label>
+                    <textarea id="mba-interest" name="interest" rows="4" placeholder="Tell us about your goals and why you want to join our MBA program..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="bsc-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 style="color: var(--primary-cyan); margin-bottom: 2rem;">B.Sc (Hons) IT Application</h2>
+            <form id="bsc-form">
+                <div class="form-group">
+                    <label for="bsc-name">Full Name *</label>
+                    <input type="text" id="bsc-name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bsc-email">Email Address *</label>
+                    <input type="email" id="bsc-email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bsc-phone">Phone Number *</label>
+                    <input type="tel" id="bsc-phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bsc-grade">+2 Grade/Percentage *</label>
+                    <input type="text" id="bsc-grade" name="grade" required placeholder="e.g., 85% or 3.8 GPA">
+                </div>
+                
+                <div class="form-group">
+                    <label for="bsc-stream">Academic Stream *</label>
+                    <select id="bsc-stream" name="stream" required>
+                        <option value="">Select your stream</option>
+                        <option value="science">Science</option>
+                        <option value="management">Management</option>
+                        <option value="humanities">Humanities</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bsc-interest">Programming Experience/Interest</label>
+                    <textarea id="bsc-interest" name="interest" rows="4" placeholder="Tell us about your experience with programming, projects, or why you're interested in IT..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="about.html">About Us</a>
+                <a href="programs/index.html">Programs</a>
+                <a href="admissions.html">Admissions</a>
+                <a href="faculty.html">Faculty</a>
+                <a href="campus.html">Campus Life</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Academic Fields</h3>
+                <a href="fields/programming.html">Programming</a>
+                <a href="fields/accounting.html">Accounting</a>
+                <a href="fields/mathematics.html">Mathematics</a>
+                <a href="fields/linguistics.html">Linguistics</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Student Life</h3>
+                <a href="events.html">Events</a>
+                <a href="forums.html">Forums</a>
+                <a href="resources.html">Resources</a>
+                <a href="testimonials.html">Testimonials</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact & Connect</h3>
+                <a href="contact.html">Contact Us</a>
+                <a href="tel:+977-1-4567890">📞 +977-1-4567890</a>
+                <a href="mailto:info@nit.edu.np">✉️ info@nit.edu.np</a>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="LinkedIn">💼</a>
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="YouTube">📺</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Nepal Institute of Technology. All rights reserved. | 
+               <a href="#" style="color: var(--text-secondary);">Privacy Policy</a> | 
+               <a href="#" style="color: var(--text-secondary);">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="js/script.js"></script>
+    
+    <!-- Additional styles for slider -->
+    <style>
+        .slider {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            margin: 2rem 0;
+        }
+        
+        .slide {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        .slide.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .slider .prev,
+        .slider .next {
+            transition: all 0.3s ease;
+        }
+        
+        .slider .prev:hover,
+        .slider .next:hover {
+            background: rgba(0,255,255,0.4) !important;
+            transform: translateY(-50%) scale(1.1);
+        }
+        
+        .indicator.active {
+            background: var(--primary-cyan) !important;
+        }
+        
+        .indicator:hover {
+            background: rgba(0,255,255,0.6) !important;
+        }
+    </style>
+</body>
+</html>

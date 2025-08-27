@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forums - Nepal Institute of Technology</title>
+    <meta name="description" content="Join the discussion forums at NIT. Connect with students, faculty, and alumni.">
+
+    <!-- Fonts & CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Custom styles for forums */
+        .forum-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: 1.5rem;
+            background: rgba(0, 255, 255, 0.1);
+            transition: background 0.3s ease;
+        }
+
+        .forum-header:hover {
+            background: rgba(0, 255, 255, 0.2);
+        }
+
+        .forum-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+        }
+
+        .forum-content.active {
+            max-height: 1000px;
+            /* Adjust as needed */
+        }
+
+        .forum-thread {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+        }
+
+        .thread-title {
+            color: var(--primary-cyan);
+        }
+
+        .thread-meta {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .reply-form {
+            display: none;
+            padding: 1.5rem;
+            background: var(--darker-bg);
+        }
+
+        .reply-form.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">NIT</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programs/index.html">Programs</a></li>
+                <li><a href="fields/index.html">Academic Fields</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="campus.html">Campus Life</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><span class="current">Forums</span></li>
+            </ul>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="hero" style="height: 60vh;">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            <div class="hero-content">
+                <h1>Discussion Forums</h1>
+                <p>Collaborate, ask questions, and share knowledge with the NIT community.</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" data-modal="new-thread-modal">Start a New Discussion</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <!-- Forum Sections -->
+            <div class="card p-0">
+                <div class="forum-section">
+                    <div class="forum-header">
+                        <h3>General Discussion</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="forum-content">
+                        <div class="forum-thread">
+                            <div>
+                                <a href="#" class="thread-title">Welcome to the NIT Community!</a>
+                                <div class="thread-meta">by Admin • 5 replies • 120 views</div>
+                            </div>
+                            <div class="thread-meta">Last post: 2 hours ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forum-section">
+                    <div class="forum-header">
+                        <h3>B.Sc (Hons) IT Program</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="forum-content">
+                        <div class="forum-thread">
+                            <div>
+                                <a href="#" class="thread-title">Tips for Final Year Project</a>
+                                <div class="thread-meta">by Priya Gurung • 15 replies • 450 views</div>
+                            </div>
+                            <div class="thread-meta">Last post: 1 day ago</div>
+                        </div>
+                        <div class="forum-thread">
+                            <div>
+                                <a href="#" class="thread-title">Best resources for learning AI?</a>
+                                <div class="thread-meta">by Arjun Thapa • 8 replies • 210 views</div>
+                            </div>
+                            <div class="thread-meta">Last post: 3 days ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forum-section">
+                    <div class="forum-header">
+                        <h3>MBA Program</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="forum-content">
+                        <div class="forum-thread">
+                            <div>
+                                <a href="#" class="thread-title">Case Study Discussion: FinTech Disruption</a>
+                                <div class="thread-meta">by Rajesh Sharma • 22 replies • 600 views</div>
+                            </div>
+                            <div class="thread-meta">Last post: 5 hours ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- New Thread Modal -->
+    <div id="new-thread-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 style="color: var(--primary-cyan); margin-bottom: 2rem;">Create New Thread</h2>
+            <form id="new-thread-form">
+                <div class="form-group">
+                    <label for="thread-title">Thread Title</label>
+                    <input type="text" id="thread-title" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="thread-category">Category</label>
+                    <select id="thread-category" name="category" required>
+                        <option value="general">General Discussion</option>
+                        <option value="bsc-it">B.Sc (Hons) IT</option>
+                        <option value="mba">MBA Program</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="thread-content">Your Message</label>
+                    <textarea id="thread-content" name="content" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Post Thread</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="about.html">About Us</a>
+                <a href="programs/index.html">Programs</a>
+                <a href="admissions.html">Admissions</a>
+                <a href="faculty.html">Faculty</a>
+                <a href="campus.html">Campus Life</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Academic Fields</h3>
+                <a href="fields/programming.html">Programming</a>
+                <a href="fields/accounting.html">Accounting</a>
+                <a href="fields/mathematics.html">Mathematics</a>
+                <a href="fields/linguistics.html">Linguistics</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Student Life</h3>
+                <a href="events.html">Events</a>
+                <a href="forums.html">Forums</a>
+                <a href="resources.html">Resources</a>
+                <a href="testimonials.html">Testimonials</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact & Connect</h3>
+                <a href="contact.html">Contact Us</a>
+                <a href="tel:+977-1-4567890">📞 +977-1-4567890</a>
+                <a href="mailto:info@nit.edu.np">✉️ info@nit.edu.np</a>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="LinkedIn">💼</a>
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="YouTube">📺</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Nepal Institute of Technology. All rights reserved. |
+                <a href="#" style="color: var(--text-secondary);">Privacy Policy</a> |
+                <a href="#" style="color: var(--text-secondary);">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
