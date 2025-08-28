@@ -633,7 +633,7 @@ function showNotification(message, type = 'info', duration = 5000) {
     notification.style.cssText = `
         position: fixed;
         top: 20px;
-        right: 20px;
+        right: 10px;
         background: var(--card-bg);
         backdrop-filter: blur(20px);
         border: 1px solid var(--primary-cyan);
